@@ -21,7 +21,7 @@ class MyRandomTest: XCTestCase {
         let myRandom = StubRandom6()
         let process = MyProcess()
         process.myRandom = myRandom
-        XCTAssertFalse(process.start())
+        XCTAssertTrue(process.start())
     }
 
     func testProcess_should_call_exec_1_time() {
